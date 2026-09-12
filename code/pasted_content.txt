@@ -1,0 +1,511 @@
+Build a **production-quality, responsive hackathon web application** called **AffordAI**.
+
+## 1. PROJECT
+
+**Project Name:** AffordAI
+
+AffordAI is an AI-powered financial affordability assistant.
+
+The core user journey should be:
+
+**Enter purchase → Analyze financial situation → Get affordability decision → Understand the reasoning → See safer payment options**
+
+The application should feel like a real **premium fintech SaaS product**, not a basic demo or generic dashboard.
+
+---
+
+## 2. HACKATHON PROBLEM
+
+The project is based on this HackerRank repository:
+
+https://github.com/interviewstreet/hackerrank-orchestrate-september26.git
+
+### IMPORTANT
+
+Before implementing the application:
+
+1. Inspect the GitHub repository.
+2. Understand the actual problem statement and expected inputs/outputs.
+3. Identify the provided datasets, files, APIs, algorithms, and constraints.
+4. Understand what the solution is expected to calculate.
+5. Use the actual challenge requirements when implementing the AffordAI logic.
+
+Do not invent a completely different problem.
+
+If the repository contains code/data that can be reused, integrate it appropriately into the application.
+
+---
+
+## 3. DESIGN REFERENCE
+
+Use this Google Stitch project as the **primary UI/UX design reference**:
+
+https://stitch.withgoogle.com/projects/14345988458300079026
+
+First inspect the design and understand its:
+
+* Layout
+* Navigation
+* Typography
+* Spacing
+* Card design
+* Colors
+* Visual hierarchy
+* Components
+* Responsive behavior
+* Animations/interactions
+
+Then adapt that design language specifically for AffordAI.
+
+Do not create a generic AI dashboard.
+
+---
+
+## 4. TECH STACK
+
+Use:
+
+* React
+* TypeScript
+* Tailwind CSS
+* Reusable React components
+* Lucide icons
+
+Keep the code clean, modular and maintainable.
+
+Use proper TypeScript types.
+
+Avoid unnecessary libraries and dependencies.
+
+---
+
+# 5. PRODUCT EXPERIENCE
+
+The main product should answer one simple question:
+
+> **"Can I safely afford this?"**
+
+The user should be able to enter information about a planned purchase and receive a clear financial recommendation.
+
+Possible results:
+
+* **Affordable**
+* **Affordable with a plan**
+* **Risky**
+* **Not recommended**
+
+The result should explain *why* the decision was made.
+
+---
+
+# 6. DASHBOARD
+
+Create a polished financial dashboard.
+
+Display realistic financial information such as:
+
+* Current balance
+* Monthly income
+* Monthly expenses
+* Safe-to-spend amount
+* Financial health score
+* Upcoming expenses
+* Recent affordability decisions
+* Financial forecast
+
+Use realistic Indian currency values such as ₹.
+
+Example:
+
+Current Balance: ₹84,500
+
+Monthly Income: ₹75,000
+
+Monthly Expenses: ₹42,000
+
+Safe to Spend: ₹32,400
+
+Financial Health Score: 82/100
+
+Do not use obvious placeholder data.
+
+---
+
+# 7. AFFORDABILITY CHECKER
+
+Create the main AffordAI feature.
+
+The user should be able to enter:
+
+* Purchase name
+* Purchase amount
+* Purchase category
+* Purchase date
+* Current balance
+* Monthly income
+* Monthly expenses
+* Existing EMI/installments
+* Minimum balance they want to maintain
+
+Primary CTA:
+
+**Analyze Affordability**
+
+When clicked:
+
+1. Validate the input.
+2. Calculate affordability.
+3. Calculate safe-to-spend amount.
+4. Determine risk level.
+5. Generate a recommendation.
+6. Show the result with a smooth transition.
+
+---
+
+# 8. AFFORDABILITY RESULT
+
+Show a clear result such as:
+
+### Affordable with a plan
+
+Purchase:
+
+**₹1,20,000**
+
+Safe to spend now:
+
+**₹32,400**
+
+Remaining:
+
+**₹87,600**
+
+Then show:
+
+* Risk level
+* Current balance after purchase
+* Protected minimum balance
+* Expected future balance
+* Recommendation
+
+Example explanation:
+
+> "Paying the full amount today would reduce your balance below your preferred safety level. A partial payment is safer based on your upcoming income and expenses."
+
+Keep explanations short and easy to understand.
+
+---
+
+# 9. PAYMENT RECOMMENDATIONS
+
+Provide meaningful alternatives:
+
+### Pay Now
+
+₹1,20,000
+
+Show whether this is safe.
+
+### Partial Payment
+
+₹32,400 today
+
+Show remaining amount and future impact.
+
+### Installments
+
+Example:
+
+₹20,500 × 6
+
+Show whether the plan is financially safe.
+
+### Wait
+
+Recommend a future date if waiting would improve affordability.
+
+Clearly highlight the recommended option.
+
+---
+
+# 10. 90-DAY FINANCIAL FORECAST
+
+Create an interactive forecast.
+
+Allow:
+
+* 30 days
+* 60 days
+* 90 days
+
+Show the projected balance over time.
+
+Include important events:
+
+* Salary/income
+* Rent
+* Bills
+* EMI
+* Planned purchase
+
+Clearly display the user's minimum safe balance.
+
+Use a polished interactive chart.
+
+---
+
+# 11. AI INSIGHTS
+
+Create an AI-style insight section.
+
+Example:
+
+### Why this recommendation?
+
+"Your current balance can support a partial payment, but paying the full amount today would bring your balance below your protected minimum. Based on your expected income and upcoming expenses, a partial payment is safer."
+
+The explanation should be generated from the actual affordability calculation rather than being static text.
+
+---
+
+# 12. FINANCIAL HEALTH
+
+Create a financial health section containing:
+
+* Financial Health Score
+* Income vs expenses
+* Spending trend
+* Savings trend
+* Upcoming obligations
+* Cash-flow summary
+
+Use clean visualizations.
+
+---
+
+# 13. NAVIGATION
+
+Keep navigation simple.
+
+Possible sections:
+
+* Dashboard
+* Affordability Check
+* Forecast
+* Insights
+* Settings
+
+Do not add unnecessary pages.
+
+On mobile, convert the navigation into an appropriate mobile menu/navigation.
+
+---
+
+# 14. DESIGN
+
+The final UI should be:
+
+* Premium
+* Minimal
+* Modern
+* Professional
+* Clean
+* Responsive
+* Fintech-focused
+
+Support:
+
+**Dark mode + Light mode**
+
+Use:
+
+* Rounded cards
+* Subtle borders
+* Soft shadows
+* Clean typography
+* Subtle gradients
+* Consistent spacing
+* Lucide icons
+* Smooth transitions
+* Small micro-interactions
+
+Avoid:
+
+* Excessive gradients
+* Excessive colors
+* Clutter
+* Huge unnecessary headings
+* Generic template-looking sections
+* Excessive glassmorphism
+* Random decorative elements
+
+The Stitch reference should strongly influence the final visual quality.
+
+---
+
+# 15. REALISTIC DATA
+
+Do not use:
+
+* Lorem ipsum
+* John Doe
+* Test User
+* Sample data
+* Empty cards
+* "Coming soon"
+* Fake unfinished sections
+
+Use believable financial data and transaction examples.
+
+The data should make the application look like a real product during the hackathon presentation.
+
+---
+
+# 16. FUNCTIONALITY
+
+This must be a **functional prototype**, not just a static UI.
+
+Implement:
+
+* Affordability calculation
+* Safe-to-spend calculation
+* Financial health calculation
+* Risk classification
+* Payment recommendation
+* Forecast calculation
+* Form validation
+* Interactive charts
+* Dark/light mode
+* Responsive navigation
+* Meaningful button actions
+
+Structure the code so that the affordability logic can be connected to the actual HackerRank challenge implementation/backend.
+
+---
+
+# 17. BUTTON RULE
+
+Every button must perform a meaningful action.
+
+For example:
+
+**Analyze Affordability**
+→ Runs the affordability calculation.
+
+**View Forecast**
+→ Opens the forecast.
+
+**Try Another Purchase**
+→ Resets the form.
+
+**View Details**
+→ Displays the relevant details.
+
+**Theme Toggle**
+→ Switches between dark and light mode.
+
+Never create buttons that do nothing.
+
+---
+
+# 18. RESPONSIVENESS
+
+The application must work properly on:
+
+* Desktop
+* Laptop
+* Tablet
+* Mobile
+
+Do not simply shrink the desktop layout.
+
+Adapt the:
+
+* Navigation
+* Cards
+* Forms
+* Charts
+* Typography
+* Spacing
+* Tables
+
+for smaller screens.
+
+---
+
+# 19. COMPONENT ARCHITECTURE
+
+Use reusable components such as:
+
+* Navbar
+* Sidebar
+* FinancialCard
+* StatusBadge
+* AffordabilityForm
+* AffordabilityResult
+* RecommendationCard
+* ForecastChart
+* FinancialHealthCard
+* TransactionCard
+* ThemeToggle
+* Modal
+
+Avoid duplicated UI/code.
+
+Keep the project structure clean and modular.
+
+---
+
+# 20. CODE QUALITY
+
+Before completing the project:
+
+* Check TypeScript errors.
+* Check console errors.
+* Check broken imports.
+* Check broken routes.
+* Check all buttons.
+* Check form validation.
+* Check mobile responsiveness.
+* Check dark/light mode.
+* Check charts.
+* Check affordability calculations.
+* Remove unused code.
+* Remove placeholder content.
+* Keep components reusable.
+
+Do not over-engineer the application.
+
+---
+
+# 21. IMPORTANT
+
+Do not generate placeholder-looking sections just to make the application appear larger.
+
+Every section must have a clear purpose.
+
+Do not add unnecessary pages.
+
+Prioritize:
+
+**Functionality + UI quality + usability + hackathon presentation quality.**
+
+---
+
+# 22. FINAL REQUIREMENT
+
+Before considering the task complete:
+
+1. Inspect the HackerRank repository and understand the actual challenge.
+2. Inspect the Stitch design reference.
+3. Build the AffordAI application based on both.
+4. Implement the actual core affordability logic.
+5. Use realistic mock data where real data is unavailable.
+6. Test the main user flow.
+7. Fix errors.
+8. Verify responsive layouts.
+9. Make the final UI polished enough for a hackathon demo.
+
+The final experience should feel like a **real premium AI fintech startup**, with the core flow:
+
+**Dashboard → Enter purchase → Analyze → Affordability decision → AI explanation → Safer payment recommendation**
