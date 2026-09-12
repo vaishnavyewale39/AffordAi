@@ -1,0 +1,10 @@
+{
+  "name": "afford-ai",
+  "private": true,
+  "version": "1.0.0",
+  "scripts": {
+    "build": "cd code && npm install && npm run build",
+    "dev": "npm --prefix code run dev",
+    "preview": "npm --prefix code run preview"
+  }
+}
