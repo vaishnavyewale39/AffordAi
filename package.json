@@ -3,7 +3,7 @@
   "private": true,
   "version": "1.0.0",
   "scripts": {
-    "build": "cd code && npm install && npm run build",
+    "build": "npm --prefix code install && npm --prefix code run build && node -e \"const fs=require('fs'); fs.cpSync('code/dist', 'dist', {recursive: true});\"",
     "dev": "npm --prefix code run dev",
     "preview": "npm --prefix code run preview"
   }
